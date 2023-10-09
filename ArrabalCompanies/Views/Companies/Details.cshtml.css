@@ -1,0 +1,236 @@
+﻿#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+hr {
+    width: 50%;
+    height: 3px;
+    background-image: linear-gradient(to right, transparent, #ff9500, transparent);
+    border: none;
+}
+
+.dataspan {
+    border-bottom: 3px solid #929292;
+}
+
+#CompanyLogo {
+    display: inline;
+    height: 75px;
+    align-items: center;
+}
+
+.CompanyName {
+    font-size: 30px;
+    display: inline;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    column-gap: 15px;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.ImageNoun {
+    display: inline;
+    height: 25px;
+}
+
+.OtherButton {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #ff9500;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#Imagine {
+    margin-top: 0%;
+    margin-left: 95%;
+}
+
+.ContainerTitleAddress {
+    width: 700px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.ContainerAddress {
+    width: auto;
+    height: auto;
+    background-color: #FFF8EE;
+    border: 2px solid #ff9500;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.AddressTextFormat {
+    display: inline;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 25px;
+}
+
+.ContainerTitleContact {
+    width: 700px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.ContainerContact {
+    width: auto;
+    height: auto;
+    background-color: #FFF8EE;
+    border: 2px solid #ff9500;
+    border-radius: 10px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ContactTextFormat {
+    display: inline;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    column-gap: 35px;
+}
+
+.ContainerTitleSector {
+    width: 350px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.ContainerSector {
+    width: auto;
+    height: auto;
+    background-color: #FFF8EE;
+    border: 2px solid #ff9500;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.SectorTextFormat {
+    display: inline;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 25px;
+}
+
+.ContainerAuthor {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    background-color: #fafafa;
+    border: 1px solid #ff9500;
+    border-radius: 10px;
+    column-gap: 10px;
+}
+
+.AuthorImage {
+    display: inline;
+    height: 15px;
+}
+
+.AuthorText {
+    display: inline;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 25px;
+}
+
+.ContainerTitleComments {
+    width: 1250px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.ContainerComments {
+    width: calc(100% - 40px);
+    background-color: #FFF8EE;
+    border: 2px solid #ff9500;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.CommentsTextFormat {
+    display: inline;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 25px;
+}
+
+.Input {
+    border: none;
+    background-color: #FFF8EE;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.InputTitle {
+    border: none;
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.InputComments {
+    min-height: 120px;
+    width: 100%;
+    min-width: 60vw;
+    border: none;
+    background-color: #FFF8EE;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    align-items: center;
+}
