@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ArrabalCompanies.Data;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ArrabalCompanies.Controllers
 {
@@ -6,14 +7,26 @@ namespace ArrabalCompanies.Controllers
     {
         DB db = new DB();
 
-        public IActionResult Index()
+        public IActionResult Index(int id = 0)
         {
-            var a = db.GetCompaniesNames();
+            if (!User.Identity.IsAuthenticated)
+            {
+                var r = new RedirectResult("/Identity/Account/Login");
+                return r;
+            }
+            ViewData["pagenum"] = id;
+            ViewData["maxpage"] = db.CountCompanies()/50;
+            var a = db.GetCompanies(id);
             return View(a);
         }
 
         public IActionResult Details(int id = 1)
         {
+            if(!User.Identity.IsAuthenticated)
+            {
+                var r = new RedirectResult("/Identity/Account/Login");
+                return r;
+            }
             return View(db.GetCompanyDetails(id));
         }
     }

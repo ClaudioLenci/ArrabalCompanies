@@ -85,7 +85,26 @@ namespace ArrabalCompanies.Areas.Identity.Pages.Account
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
-            public string Email { get; set; }
+            public string Email
+            {
+                get
+                {
+                    return _email;
+                } 
+                set
+                { 
+                    if(!value.EndsWith("@arrabalempleo.org"))
+                    {
+                        throw new Exception("Non arrabalempleo!");
+                    }
+                    else
+                    {
+                        _email = value;
+                    }
+                }
+            }
+
+            private string _email;
 
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
@@ -121,7 +140,6 @@ namespace ArrabalCompanies.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = CreateUser();
-
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
